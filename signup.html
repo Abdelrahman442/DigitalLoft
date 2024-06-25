@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Sign Up | DIGITAL LOFT</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/helpers/all.min.css" />
+    <link rel="stylesheet" href="assets/helpers/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/signup.css" />
+  </head>
+  <body>
+    <!-- sign up -->
+    <section class="signup">
+      <h2 class="fw-bolder mb-3">
+        Welcome To <br /><span class="green">DIGITAL</span>
+        <span class="orange">LOFT</span>
+      </h2>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="signupform">
+            <form>
+              <h3 class="mb-3">Personal Details</h3>
+              <div class="row mb-3">
+                <div class="form-group col-md-4">
+                  <label class="fw-medium mb-2" for="firstName"
+                    >First Name *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Enter Name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="fw-medium mb-2" for="lastName"
+                    >Last Name *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Enter Name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="fw-medium mb-2" for="email"
+                    >E-Mail Address *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter Email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="form-group col-md-6">
+                  <label class="fw-medium mb-2" for="password"
+                    >Create Password *</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="********"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="fw-medium mb-2" for="confirmPassword"
+                    >Confirm Password *</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    placeholder="********"
+                    required
+                  />
+                </div>
+              </div>
+
+              <h3 class="mb-3">Billing Address</h3>
+
+              <div class="row mb-3">
+                <div class="form-group col-md-6">
+                  <label class="fw-medium mb-2" for="addressLine1"
+                    >Address Line 1 *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addressLine1"
+                    placeholder="Address line 1"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="fw-medium mb-2" for="addressLine2"
+                    >Address Line 2</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addressLine2"
+                    placeholder="Address line 2"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label class="fw-medium mb-2" for="city">Town / City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Town / City"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="fw-medium mb-2" for="state">State *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    placeholder="State"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="fw-medium mb-2" for="postcode"
+                    >Postcode *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="postcode"
+                    placeholder="Postcode"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="fw-medium mb-2" for="country">Country *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="country"
+                    placeholder="Country"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-green mt-3">
+                Continue to select package
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-4 d-none d-md-block p-0">
+          <div class="img">
+            <img
+              src="assets/images/signup.png"
+              alt="flying bird"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./sign up -->
+
+    <!-- js files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/signup.js"></script>
+  </body>
+</html>

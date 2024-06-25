@@ -1,0 +1,134 @@
+global style * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-color: #6dbb7f;
+  --orange-color: #fecd4e;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-green {
+  color: white;
+  background-color: var(--green-color);
+  padding: 8px 15px;
+  transition: 0.5s;
+}
+
+.btn-green:hover {
+  color: white;
+  background-color: #62a772;
+}
+
+.btn-orange {
+  color: white;
+  font-size: 17px;
+  padding: 8px 15px;
+  transition: 0.5;
+  background-color: var(--orange-color);
+}
+
+.btn-orange:hover {
+  color: white;
+  background-color: #ecbe49;
+}
+
+.green-txt {
+  color: var(--green-color);
+}
+
+.orange-txt {
+  color: var(--orange-color);
+}
+
+/* header style */
+.site-logo {
+  width: 150px;
+}
+
+nav .nav-link {
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 0 20px !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #6dbb7f !important;
+}
+
+@media (max-width: 992px) {
+  nav .nav-link {
+    border-radius: 3px;
+    padding: 10px !important;
+  }
+
+  nav .nav-link.active {
+    color: white !important;
+  }
+
+  nav .nav-link.active,
+  nav .nav-link:hover {
+    color: white;
+    background: #00000025;
+  }
+}
+
+/* main section */
+.main-section {
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/gradientbg.jpg);
+}
+
+/* statistics */
+.statistics {
+  padding: 100px 0;
+}
+
+.stat:hover {
+  color: white;
+  transition: 0.5s;
+  background-color: var(--green-color);
+}
+
+/* team */
+.team,
+.article {
+  padding: 100px 0;
+}
+
+/* contact */
+.contact .head .green {
+  color: var(--green-color);
+}
+
+form label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* site-app */
+.site-app.bg-color {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/gradientbg.jpg");
+}
+
+/* footer */
+footer .nav-link {
+  color: white !important;
+}
+
+footer i {
+  color: var(--orange-color);
+}

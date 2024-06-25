@@ -1,0 +1,279 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* #6d9ebb */
+:root {
+  --green-color: #6dbb7f;
+  --orange-color: #fecd4e;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-green {
+  color: white;
+  background-color: var(--green-color);
+  padding: 8px 15px;
+  transition: 0.5s;
+}
+
+.btn-green:hover {
+  color: white;
+  background-color: #62a772;
+}
+
+.btn-orange {
+  color: white;
+  font-size: 17px;
+  padding: 8px 15px;
+  transition: 0.5;
+  background-color: var(--orange-color);
+}
+
+.btn-orange:hover {
+  color: white;
+  background-color: #ecbe49;
+}
+
+.green-txt {
+  color: var(--green-color);
+}
+
+.orange-txt {
+  color: var(--orange-color);
+}
+
+/* header style */
+.site-logo {
+  width: 150px;
+}
+
+nav .nav-link {
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 0 20px !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #6dbb7f !important;
+}
+
+@media (max-width: 992px) {
+  nav .nav-link {
+    border-radius: 3px;
+    padding: 10px !important;
+  }
+
+  nav .nav-link.active {
+    color: white !important;
+  }
+
+  nav .nav-link.active,
+  nav .nav-link:hover {
+    color: white;
+    background: #00000025;
+  }
+}
+
+/* main section */
+.main-section {
+  min-height: 100vh;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/gradientbg.jpg);
+}
+
+.main-section-content h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 62px;
+}
+
+@media (max-width: 425px) {
+  .main-section-content h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.main-section-content p {
+  color: #ffffff;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+/* site app */
+.site-app h3 {
+  font-weight: 500;
+}
+
+/* features */
+.features .feature-text h4 {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.features .feature img {
+  width: 50px;
+  height: 50px;
+}
+
+/* groups */
+.group-text .green-text {
+  color: var(--green-color);
+}
+.group-text .orange-text {
+  color: var(--orange-color);
+}
+
+/* about */
+.about {
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/gradientbg.jpg);
+}
+
+.about-body .icon {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #fff4;
+}
+
+/* testimonials */
+.testimonials-text .orange-txt {
+  color: var(--orange-color);
+}
+
+/* slider */
+.owl-carousel {
+  height: 100%;
+  max-height: 100%;
+}
+
+.owl-carousel .item {
+  color: black;
+  padding: 30px 0;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.owl-carousel .item .img img {
+  width: 60px;
+}
+
+.owl-nav {
+  display: flex;
+  margin-top: 10px;
+}
+
+.owl-nav button.owl-prev {
+  display: none;
+}
+
+.owl-nav button .fas {
+  font-size: 30px;
+  color: var(--green-color);
+}
+
+.owl-nav button:hover {
+  background-color: white !important;
+}
+
+/* pricing */
+.pricing .green {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--green-color);
+}
+
+.plan {
+  height: 100%;
+}
+
+.pricing .orange {
+  color: var(--orange-color);
+}
+
+.plan-head .green {
+  color: var(--green-color);
+}
+
+.plan-head .hr-green {
+  border: 1px solid var(--green-color);
+  opacity: 0.5;
+}
+
+.plan-body ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.plan-body li {
+  color: #c9c2be;
+  padding: 10px 0;
+  font-size: 17px;
+  position: relative;
+}
+
+.plan-body li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--orange-color);
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  top: 50%;
+  transform: translate(-170%, -50%);
+}
+
+.popular {
+  background-color: var(--green-color);
+  color: white;
+}
+
+.popular button {
+  background-color: #62a772;
+}
+
+.popular li {
+  color: white;
+}
+
+/* contact */
+.contact .head .green {
+  color: var(--green-color);
+}
+
+form label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* site-app */
+.site-app.bg-color {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/gradientbg.jpg");
+}
+
+/* footer */
+footer .nav-link {
+  color: white !important;
+}
+
+footer i {
+  color: var(--orange-color);
+}

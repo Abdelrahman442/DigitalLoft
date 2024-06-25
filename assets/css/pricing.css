@@ -1,0 +1,241 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-color: #6dbb7f;
+  --orange-color: #fecd4e;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-green {
+  color: white;
+  background-color: var(--green-color);
+  padding: 8px 15px;
+  transition: 0.5s;
+}
+
+.btn-green:hover {
+  color: white;
+  background-color: #62a772;
+}
+
+.btn-orange {
+  color: white;
+  font-size: 17px;
+  padding: 8px 15px;
+  transition: 0.5;
+  background-color: var(--orange-color);
+}
+
+.btn-orange:hover {
+  color: white;
+  background-color: #ecbe49;
+}
+
+.green-txt {
+  color: var(--green-color);
+}
+
+.orange-txt {
+  color: var(--orange-color);
+}
+
+/* header style */
+.site-logo {
+  width: 150px;
+}
+
+nav .nav-link {
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 0 20px !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #6dbb7f !important;
+}
+
+@media (max-width: 992px) {
+  nav .nav-link {
+    border-radius: 3px;
+    padding: 10px !important;
+  }
+
+  nav .nav-link.active {
+    color: white !important;
+  }
+
+  nav .nav-link.active,
+  nav .nav-link:hover {
+    color: white;
+    background: #00000025;
+  }
+}
+
+/* main section */
+.main-section {
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/gradientbg.jpg);
+}
+
+/* pricing */
+.pricing .green {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--green-color);
+}
+
+.plan {
+  height: 100%;
+}
+
+.pricing .orange {
+  color: var(--orange-color);
+}
+
+.plan-head .green {
+  color: var(--green-color);
+}
+
+.plan-head .hr-green {
+  border: 1px solid var(--green-color);
+  opacity: 0.5;
+}
+
+.plan-body ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.plan-body li {
+  color: #c9c2be;
+  padding: 10px 0;
+  font-size: 17px;
+  position: relative;
+}
+
+.plan-body li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--orange-color);
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  top: 50%;
+  transform: translate(-170%, -50%);
+}
+
+.popular {
+  background-color: var(--green-color);
+  color: white;
+}
+
+.popular button {
+  font-size: 15px;
+  background-color: #62a772;
+}
+
+.popular li {
+  color: white;
+}
+
+/* swap palns btn */
+.toggle-btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-btn input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--orange-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.plans {
+  display: none;
+}
+
+.plans.active {
+  display: block;
+}
+
+/* contact */
+.contact .head .green {
+  color: var(--green-color);
+}
+
+form label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* site-app */
+.site-app.bg-color {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/gradientbg.jpg");
+}
+
+/* footer */
+footer .nav-link {
+  color: white !important;
+}
+
+footer i {
+  color: var(--orange-color);
+}
